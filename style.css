@@ -1,0 +1,231 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #222;
+}
+nav {
+    background: rgba(34, 34, 34, 0.5);
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav-logo img {
+    height: 40px;
+    margin-left: 2rem;
+}
+.nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-center li {
+    margin: 0 1.5rem;
+}
+.nav-center li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.nav-center li a.active, .nav-center li a:hover {
+    background: #4caf50;
+}
+.nav-download {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+.download-btn {
+    background: #4caf50;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+    height: 67px;
+    display: flex;
+    align-items: center;
+}
+.download-btn:hover {
+    background: #388e3c;
+}
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+h1 {
+    margin-top: 0;
+    color: #4caf50;
+}
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+#main {
+    width: 98vw;
+    max-width: 98vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+    background: transparent;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+}
+.big-logo {
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    width: auto;
+    display: block;
+}
+@font-face {
+    font-family: 'Calypso';
+    src: url('Fonts/Calypso.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.slogan {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 40px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    max-width: 90vw;
+    font-family: 'Calypso', 'Segoe UI', Arial, sans-serif;
+}
+.strip-bg {
+    width: 99vw;
+    max-width: 99vw;
+    box-sizing: border-box;
+    background: url('img/BackgroundStrip1.png') center center no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    padding: 0;
+}
+
+#AboutGame {
+    height: auto;
+    min-height: 1px;
+    padding: 0;
+}
+
+#AboutGame.strip-bg {
+    height: 1080px;
+    min-height: 1080px;
+    max-height: 1080px;
+    width: 99.2vw;
+    max-width: 99.2vw;
+    box-sizing: border-box;
+    background: url('img/BackgroundStrip1.png') center center no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+}
+.strip-title {
+    font-family: 'Calypso', 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: left;
+    width: 100%;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    padding: 60px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+.aboutgame-desc {
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: 'Calypso', 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+     
+    margin-left: 0;
+    max-width: 1000px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    line-height: 1.5;
+    background: rgba(0,0,0,0.18);
+    border-radius: 12px;
+    padding: 32px 36px;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+.aboutgame-btn {
+    margin-top: 40px;
+    margin-right: 25%;
+    padding: 18px 48px;
+    
+    font-size: 2rem;
+    font-family: 'Calypso', 'Segoe UI', Arial, sans-serif;
+    background: rgba(10, 20, 40, 0.18);
+    color: #fff;
+    border: 1px solid #00eaff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+    display: inline-block;
+    cursor: pointer;
+}
+.aboutgame-btn:hover {
+    background: rgba(0, 234, 255, 0.12);
+    border-color: #00eaff;
+    color: #00eaff;
+    transform: scale(1.06);
+}
+@media (max-width: 900px) {
+    .aboutgame-desc {
+        margin-left: 0;
+        max-width: 98vw;
+        padding: 18px 8px;
+        font-size: 1.1rem;
+    }
+}
